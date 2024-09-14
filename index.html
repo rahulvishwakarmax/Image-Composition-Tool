@@ -1,0 +1,35 @@
+<head>
+  <title>Green Screen Algorithm</title>
+  <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <u><h1>Image Composition Tool</h1></u>
+    <div class="canvas-container">
+      <canvas id="can1"></canvas>
+      <canvas id="can2"></canvas>
+    </div>
+    <div class="button-container">
+      <p>
+        <label for="fgimage">Foreground Image</label><br>
+        <input type="file" id="fgimage" accept="img/*" onchange="uploadFgimage()">
+    </p>
+    <p>
+        <label for="bgimage">Background Image</label><br>
+        <input type="file" id="bgimage" accept="img/*" onchange="uploadBgimage()">
+    </p>
+      <div class="button-row">
+        <input type="button" value="Create Composite" id="compb" onclick="createComposite()">
+        <input type="button" value="Clear Canvases" id="clrcv" onclick="clearCanvases()">
+      </div>
+      <div class="button-row">
+        <input type="button" value="Try Sample 1" id="trySample1Button" onclick="trySampleImages(1)">
+        <input type="button" value="Try Sample 2" id="trySample2Button" onclick="trySampleImages(2)">
+        <input type="button" value="Try Sample 3" id="trySample3Button" onclick="trySampleImages(3)">
+      </div>
+    </div>
+  </div>
+</body>
