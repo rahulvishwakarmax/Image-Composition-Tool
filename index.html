@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Screen Algorithm</title>
   <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <div class="container">
     <u><h1>Image Composition Tool</h1></u>
@@ -15,12 +18,12 @@
     <div class="button-container">
       <p>
         <label for="fgimage">Foreground Image</label><br>
-        <input type="file" id="fgimage" accept="img/*" onchange="uploadFgimage()">
-    </p>
-    <p>
+        <input type="file" id="fgimage" accept="image/*" onchange="uploadFgimage()">
+      </p>
+      <p>
         <label for="bgimage">Background Image</label><br>
-        <input type="file" id="bgimage" accept="img/*" onchange="uploadBgimage()">
-    </p>
+        <input type="file" id="bgimage" accept="image/*" onchange="uploadBgimage()">
+      </p>
       <div class="button-row">
         <input type="button" value="Create Composite" id="compb" onclick="createComposite()">
         <input type="button" value="Clear Canvases" id="clrcv" onclick="clearCanvases()">
@@ -33,3 +36,4 @@
     </div>
   </div>
 </body>
+</html>
